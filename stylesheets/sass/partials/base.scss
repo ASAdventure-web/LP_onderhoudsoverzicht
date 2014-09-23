@@ -22,11 +22,11 @@ html {
   font-size: 93.75%;
   font-weight: 100;
 
-  @media only screen and(max-width: 979px){
+  @media only screen and(max-width: 1199px){
 		font-size: .9em;
   }
 
-  @media only screen and(max-width: 780px){
+  @media only screen and(max-width: 979px){
 		font-size: .8em;
   }
 }
