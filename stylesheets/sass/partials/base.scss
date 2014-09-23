@@ -1,0 +1,42 @@
+/* ==========================================================================
+
+	BASE
+
+========================================================================== */
+
+/* =====================
+	VARIABLES
+===================== */
+
+$mainColor: #A1A1A1;
+$accentColor: #6D91A0;
+
+// NORMALIZE THROUGH BOWER_COMPONENTS
+@import "../../../bower_components/normalize-scss/normalize.scss";
+
+// RE-BASE 
+html {
+  box-sizing: border-box; // Border-box
+  color: $mainColor;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 93.75%;
+  font-weight: 100;
+
+  @media only screen and(max-width: 979px){
+		font-size: .9em;
+  }
+
+  @media only screen and(max-width: 780px){
+		font-size: .8em;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; // Border-box best practice (modules)
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: $accentColor;
+	font-weight: 400;
+}
+

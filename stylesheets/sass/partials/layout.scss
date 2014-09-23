@@ -1,0 +1,66 @@
+/* ==========================================================================
+
+	LAYOUT
+
+========================================================================== */
+
+// SCOPE-ID
+ #lp-wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: center;
+  width: 96%;
+  .subheading {
+    margin-bottom: 3em;
+  }
+  .main-content {
+    display: flex;
+
+    @media only screen and(max-width: 634px){
+    	display: block;
+    }
+  }
+  .content-article {
+    //display: inline-block;
+    float: left;
+    padding-bottom: 3em;
+    position: relative;
+    width: 33.333333%;
+
+    @media only screen and(max-width: 634px){
+    	float: none;
+    	margin-bottom: 3em;
+			width: 100%;
+    }
+    .icon {
+      max-width: 56px;
+    }
+    p {
+      padding: 0 1.4em;
+    }
+  }
+  .cta {
+    background: url(../../images/cta_achtergrond.gif);
+    background-size: contain;
+    color: #ffffff;
+    height: 37px;
+    line-height: 37px;
+    margin: 0 auto;
+    padding: 0 .9333em;
+    position: absolute;
+    bottom: 0;
+    left: 14.375%;
+    text-align: left;
+    text-decoration: none;
+    width: percentage(228/320);
+    &:after {
+      content: "";
+      float: right;
+      font-family: "FontAwesome";
+      margin-left: .9333em;
+    }
+    &:hover {
+      background: url(../../images/cta_achtergrond_hover.gif);
+    }
+  }
+}
