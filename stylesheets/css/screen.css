@@ -406,10 +406,6 @@ html {
     html {
       font-size: .8em; } }
 
-*, *:before, *:after {
-  -moz-box-sizing: inherit;
-       box-sizing: inherit; }
-
 h1, h2, h3, h4, h5, h6 {
   color: #6D91A0;
   font-weight: 400; }
@@ -420,6 +416,8 @@ h1, h2, h3, h4, h5, h6 {
 
 ========================================================================== */
 #lp-wrapper {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   color: #A1A1A1;
   font-size: 15px;
   margin: 0 auto;

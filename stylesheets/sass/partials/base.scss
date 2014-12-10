@@ -31,10 +31,6 @@ html {
   }
 }
 
-*, *:before, *:after {
-  box-sizing: inherit; // Border-box best practice (modules)
-}
-
 h1, h2, h3, h4, h5, h6{
 	color: $accentColor;
 	font-weight: 400;
